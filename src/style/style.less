@@ -1,0 +1,51 @@
+.drawing-svg {
+
+    &__circle {
+      fill: #ffffff;
+      stroke: #000000;
+      stroke-width: 2px;
+
+      &:hover {
+        fill: #99ccff;
+      }
+
+      &_first {
+        fill: #00bb00;
+      }
+
+      &_last {
+        fill: #45d4ff;
+      }
+    }
+
+    &__polygon {
+      fill: rgba(0,0,0,0.5);
+      stroke: #000000;
+      stroke-width: 2px;
+
+      &:hover {
+        fill: rgba(0,0,0,0.3);
+      }
+
+      &_drawing {
+        fill: transparent;
+
+        &:hover {
+          fill: transparent;
+        }
+      }
+
+      &_focus {
+        fill: rgba(0,0,0,0.3);
+        outline: none;
+      }
+
+      &_disabled {
+        fill: rgba(0,0,0,0.5);
+
+        &:hover {
+            fill: rgba(0,0,0,0.5);
+          }
+      }
+    }
+}
