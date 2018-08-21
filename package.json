@@ -1,6 +1,6 @@
 {
   "name": "drawing-svg",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "scripts": {
     "devserver": "cross-env NODE_ENV=development webpack-dev-server",
     "webpack-production": "cross-env NODE_ENV=production webpack -p"
@@ -16,6 +16,9 @@
   "license": "ISC",
   "main": "dist/drawing-svg.js",
   "style": "dist/drawing-svg.css",
+  "dependencies": {
+    "svg.js": "2.6.4"
+  },
   "devDependencies": {
     "html-webpack-plugin": "3.0.3",
     "json-loader": "0.5.4",
@@ -38,7 +41,6 @@
     "less": "2.7.2",
     "less-loader": "2.2.3",
     "style-loader": "0.13.1",
-    "svg.js": "2.6.4",
     "svg.panzoom.js": "1.2.0",
     "uglifyjs-webpack-plugin": "1.2.2",
     "url-loader": "0.5.7",
