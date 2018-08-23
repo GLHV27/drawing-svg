@@ -4,7 +4,6 @@ import Zoom from './Zoom';
 import Polygon from './Polygon';
 import Helper from './Helper';
 import { EVENTS, CLASSES } from './config';
-import '../style/style.less';
 
 class DrawingSVG extends Helper {
     constructor(elem, params) {
