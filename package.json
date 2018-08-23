@@ -1,6 +1,6 @@
 {
   "name": "drawing-svg",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "scripts": {
     "devserver": "cross-env NODE_ENV=development webpack-dev-server",
     "webpack-production": "cross-env NODE_ENV=production webpack -p"
