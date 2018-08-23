@@ -16,6 +16,15 @@
   "license": "ISC",
   "main": "./index.js",
   "style": "./dist/drawing-svg.css",
+  "config": {
+    "port": 8018,
+    "entry": {
+      "drawing-svg": [
+        "./src/style/style.less",
+        "./src/js/index.js"
+      ]
+    }
+  },
   "dependencies": {
     "svg.js": "2.6.4"
   },
