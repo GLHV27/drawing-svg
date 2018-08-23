@@ -28,7 +28,7 @@ class Polygon extends Helper {
             .on('focus.Polygon', this.onFocus.bind(this))
             .on('blur.Polygon', this.onBlur.bind(this));
 
-        this.triggerCallback(this.onAfterCreatPolygon.bind(this), this.plot);
+        this.triggerCallback(this.onAfterCreatPolygon, this.plot);
     }
 
     onFocus() {
@@ -50,7 +50,7 @@ class Polygon extends Helper {
     }
 
     remove() {
-        this.triggerCallback(this.onBeforeRemovePolygon.bind(this), this.index);
+        this.triggerCallback(this.onBeforeRemovePolygon, this.index);
 
         this.removePoints();
         this.elem.remove();

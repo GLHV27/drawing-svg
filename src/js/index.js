@@ -25,10 +25,6 @@ class DrawingSVG extends Helper {
         this.children = [];
 
         this.init();
-
-        if (process.env.NODE_ENV) {
-            console.log('DrawingSVG', this);
-        }
     }
 
     init() {
