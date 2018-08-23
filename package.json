@@ -1,6 +1,6 @@
 {
   "name": "drawing-svg",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "scripts": {
     "devserver": "cross-env NODE_ENV=development webpack-dev-server",
     "webpack-production": "cross-env NODE_ENV=production webpack -p"
@@ -14,8 +14,8 @@
     "email": "glukhov8@yandex.ru"
   },
   "license": "ISC",
-  "main": "dist/drawing-svg.js",
-  "style": "dist/drawing-svg.css",
+  "main": "./index.js",
+  "style": "./dist/drawing-svg.css",
   "dependencies": {
     "svg.js": "2.6.4"
   },
