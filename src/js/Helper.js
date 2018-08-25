@@ -61,7 +61,7 @@ class Helper {
 
     triggerCallback(callback, ...params) {
         if (callback && typeof callback === 'function') {
-            callback.bind(this, params);
+            callback(this, ...params);
         }
     }
 };
