@@ -20,8 +20,8 @@ class DrawingSVG extends Helper {
         this.callbacks = {
             onAfterCreatPolygon: null,
             onBeforeRemovePolygon: null,
-            onAfterFocusPolygon: null,
-            onAfterBlurPolygon: null,
+            onFocusPolygon: null,
+            onBlurPolygon: null,
             ...params.callbacks
         };
         this.children = [];
@@ -105,8 +105,8 @@ class DrawingSVG extends Helper {
             groupCircles: this.groupCircles,
             onAfterCreatPolygon: this.callbacks.onAfterCreatPolygon,
             onBeforeRemovePolygon: this.callbacks.onBeforeRemovePolygon,
-            onAfterFocusPolygon: this.callbacks.onAfterFocusPolygon,
-            onAfterBlurPolygon: this.callbacks.onAfterBlurPolygon
+            onFocusPolygon: this.callbacks.onFocusPolygon,
+            onBlurPolygon: this.callbacks.onBlurPolygon
         });
 
         this.children.push(polygon);
