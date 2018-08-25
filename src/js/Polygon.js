@@ -13,6 +13,8 @@ class Polygon extends Helper {
         this.groupCircles = params.groupCircles;
         this.onAfterCreatPolygon = params.onAfterCreatPolygon;
         this.onBeforeRemovePolygon = params.onBeforeRemovePolygon;
+        this.onAfterFocusPolygon = params.onAfterFocusPolygon;
+        this.onAfterBlurPolygon = params.onAfterBlurPolygon;
         this.points = [];
 
         this.init();
@@ -34,13 +36,17 @@ class Polygon extends Helper {
     onFocus() {
         this.elem
             .addClass(CLASSES.polygonFocus)
-            .on('keyup.Polygon', this.onKeyup .bind(this));
+            .on('keyup.Polygon', this.onKeyup.bind(this));
+
+        this.triggerCallback(this.onAfterFocusPolygon, this.index);
     }
 
     onBlur() {
         this.elem
             .removeClass(CLASSES.polygonFocus)
             .off('keyup.Polygon');
+
+        this.triggerCallback(this.onAfterBlurPolygon, this.index);
     }
 
     onKeyup(event) {
